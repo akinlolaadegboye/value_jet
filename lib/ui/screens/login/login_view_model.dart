@@ -8,7 +8,7 @@ import 'package:valuejet/utils/router/navigation_service.dart';
 import 'package:valuejet/utils/router/route_names.dart';
 
 class LoginViewModel extends BaseModel {
-  final Authentication _authentication = locator<Authentication>();
+  //final Authentication _authentication = locator<Authentication>();
   final NavigationService _navigationService = locator<NavigationService>();
 
   // signIn(LoginPayload signInBody) async {

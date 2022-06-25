@@ -19,7 +19,7 @@ class BottomNavigation extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<BottomNavigation> {
-  final Authentication _authentication = locator<Authentication>();
+  // final Authentication _authentication = locator<Authentication>();
   final NavigationService _navigationService = locator<NavigationService>();
 
   late String counter;

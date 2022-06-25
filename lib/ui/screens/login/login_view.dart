@@ -45,17 +45,16 @@ class LoginState extends State<Login> {
                   children: [
                     Text(""),
                     Text(
-                        "Sign In",
-                        style: TextStyle(
-                            color: AppColors.secondaryColor, fontSize: 14),
-                      ),
-
+                      "Sign In",
+                      style: TextStyle(
+                          color: AppColors.secondaryColor, fontSize: 14),
+                    ),
                   ],
                 ),
                 backgroundColor: Color(0xffF4EEEE),
               ),
               body: SingleChildScrollView(
-              child:Column(
+                  child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -145,8 +144,7 @@ class LoginState extends State<Login> {
                                                     hintStyle: const TextStyle(
                                                       color: Colors.grey,
                                                     ),
-                                                    fillColor:
-                                                        AppColors.white,
+                                                    fillColor: AppColors.white,
                                                     filled: true,
                                                     focusedBorder:
                                                         const OutlineInputBorder(
@@ -238,8 +236,7 @@ class LoginState extends State<Login> {
                                                       color: Colors.grey,
                                                     ),
                                                     filled: true,
-                                                    fillColor:
-                                                        AppColors.white,
+                                                    fillColor: AppColors.white,
                                                     focusedBorder:
                                                         const OutlineInputBorder(
                                                       borderRadius:
@@ -299,13 +296,15 @@ class LoginState extends State<Login> {
                                       padding: const EdgeInsets.all(20),
                                       child: GeneralButton(
                                         onPressed: () {
-                                          if (_formKey.currentState!
-                                              .validate()) {
-                                            _navigationService
-                                                .pushAndRemoveUntil(bottomNavigationRoute);
-                                            // model.signIn(LoginPayload(
-                                            //     email: emailController.text, password: passwordController.text, userToken: fcmToken));
-                                          }
+                                          _navigationService.pushAndRemoveUntil(
+                                              bottomNavigationRoute);
+                                          // if (_formKey.currentState!
+                                          //     .validate()) {
+                                          //   _navigationService
+                                          //       .pushAndRemoveUntil(bottomNavigationRoute);
+                                          //   // model.signIn(LoginPayload(
+                                          //   //     email: emailController.text, password: passwordController.text, userToken: fcmToken));
+                                          // }
                                         },
                                         buttonText: 'SIGN IN',
                                         splashColor: AppColors.primaryColor,
@@ -343,7 +342,7 @@ class LoginState extends State<Login> {
                               ),
                               //height: Responsive.height(context) / 2.2,
                               child: ListTile(
-                                onTap: (){
+                                onTap: () {
                                   _navigationService.navigateTo(registerRoute);
                                 },
                                 title: Text("Don’t have an account yet?"),
@@ -365,8 +364,9 @@ class LoginState extends State<Login> {
                               ),
                               //height: Responsive.height(context) / 2.2,
                               child: ListTile(
-                                onTap: (){
-                                  _navigationService.navigateTo(ManageBookingRoute);
+                                onTap: () {
+                                  _navigationService
+                                      .navigateTo(ManageBookingRoute);
                                 },
                                 title: Text("Already Booked a flight? "),
                                 subtitle: Text(
@@ -381,7 +381,7 @@ class LoginState extends State<Login> {
                     ],
                   ),
                 ],
-              )  ));
+              )));
         });
   }
 }

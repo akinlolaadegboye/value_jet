@@ -24,7 +24,7 @@ class VerificationView extends StatefulWidget {
 
 class _VerificationViewState extends State<VerificationView> {
   final NavigationService _navigationService = locator<NavigationService>();
-  final Authentication _authentication = locator<Authentication>();
+ // final Authentication _authentication = locator<Authentication>();
   final RegisterViewModel model = RegisterViewModel();
   int time = 60;
   late Timer _timer;

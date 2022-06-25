@@ -21,7 +21,7 @@ class VerifyForgotPasswordPageState extends State<VerifyForgotPasswordPage> {
   final NavigationService _navigationService = locator<NavigationService>();
   TextEditingController otpController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  final Authentication _authentication = locator<Authentication>();
+ // final Authentication _authentication = locator<Authentication>();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   late bool passwordVisible;
   @override

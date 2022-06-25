@@ -1,23 +1,23 @@
-/// search-input : "a"
+// /// search-input : "a"
 
-class Search {
-  String _searchInput;
+// class Search {
+//   String _searchInput;
 
-  String get searchInput => _searchInput;
+//   String get searchInput => _searchInput;
 
-  Search({
-      String searchInput}){
-    _searchInput=searchInput;
-}
+//   Search({
+//       String searchInput}){
+//     _searchInput=searchInput;
+// }
 
-  Search.fromJson(dynamic json) {
-    _searchInput = json["search-input"];
-  }
+//   Search.fromJson(dynamic json) {
+//     _searchInput = json["search-input"];
+//   }
 
-  Map<String, dynamic> toJson() {
-    var map = <String, dynamic>{};
-    map["search-input"] =_searchInput;
-    return map;
-  }
+//   Map<String, dynamic> toJson() {
+//     var map = <String, dynamic>{};
+//     map["search-input"] =_searchInput;
+//     return map;
+//   }
 
-}
+// }

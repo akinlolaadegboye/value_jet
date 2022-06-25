@@ -21,7 +21,7 @@ class SplashScreenState extends State<AnimatedSplashScreen>
   final NavigationService _navigationService = locator<NavigationService>();
   late AnimationController animationController;
   late Animation<double> animation;
-  final Authentication _authentication = locator<Authentication>();
+ // final Authentication _authentication = locator<Authentication>();
   startTime() async {
     var _duration = const Duration(seconds: 4);
     return Timer(_duration, navigationPage);
